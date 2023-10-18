@@ -1,8 +1,0 @@
-ABCDEFGHIJKLM
-NOPQRSTUVWXYZ
-abcdefghijklm
-nopqrstuvwxyz
-&?¿!¡.,:;…“”‘
-’'"«»‹›()[]{}
-//\|-–—_
-0123456789

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#EEEEEE"/>
 	<link rel="stylesheet" href="styles.css">
-    <title>Your Photo Project</title>
+	<script src="site.js"></script>
+    <title>The Ordinary - Imprint</title>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
 				<div class="legal-text"
 					<p class="legal-header">According to &#167 5 TMG</p>
 					<p>Contact Information:</p>
-					<img src="./img/imprint_address.png" alt="Imprint Adress" style="width: 400px;">
+					<img class="invert-image" src="./img/imprint_address.png" alt="Imprint Adress" style="width: 400px;">
 					<p>E-Mail: <a href="mailto:apps@milanelsen.com">apps@milanelsen.com</a></p>
 					<p class="legal-header">Liability for Content</p>
 					<p>As a service provider we are responsible according to &#167 7 Abs.1 TMG for our own contents on this website according to the general laws. We do not provide third party content. Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the moment of knowledge of a specific infringement. Upon notification of appropriate violations, we will remove this content immediately.</p>
@@ -94,9 +95,17 @@
 
 	<footer>
 		<div class="footer">
-			<p>&copy; 2023 Your Photo Project</p>
+			<p>&copy; 2023 Milan Elsen</p>
 			<a href="./imprint.html">Imprint</a>
 			<a href="./imprint.html#privacy">Privacy Policy</a>
+
+			<div style="padding: 10px;"></div>
+			<button type="button"  onclick="toggleDarkMode()" class="button">
+				<svg width="28px" height="28px" viewBox="0 0 24 24" fill="var(--primary-text)" xmlns="http://www.w3.org/2000/svg">						<path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="var(--primary-text)"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="var(--primary-text)"/>
+				</svg>
+			</button>
+				
 		</div>
 	</footer>
 

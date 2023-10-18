@@ -4,11 +4,20 @@
     color-scheme: light dark; /* both supported */
 }
 
+@font-face {
+    font-family: 'Fraunces';
+    src: url(fonts/Fraunces--latin_basic.woff2), format('woff');
+}
+
 body {
     --background: #f4f4f4;
     --primary-text: #202020;
     --secondary-text: #ABABAB;
     --secondary-background: #EEEEEE;
+
+    .invert-image {
+        filter: invert(1);
+    }
 }
 
 body.dark-theme {
@@ -16,6 +25,10 @@ body.dark-theme {
     --primary-text: #F4F4F4;
     --secondary-text: #ABABAB;
     --secondary-background: #181818;
+
+    img {
+        filter: invert(1);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +37,10 @@ body.dark-theme {
         --primary-text: #F4F4F4;
         --secondary-text: #ABABAB;
         --secondary-background: #181818;
+
+        .invert-image {
+            filter: invert(1);
+        }    
      }
     body.light-theme {
         --background: #f4f4f4;
@@ -31,16 +48,6 @@ body.dark-theme {
         --secondary-text: #ABABAB;
         --secondary-background: #EEEEEE;
      }
-}
-
-@font-face {
-    font-family: 'Lexend';
-    src: url(https://milanelsen.com/fonts/lexend/lexend-variable.ttf) format("truetype");
-  }
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url(fonts/Fraunces--latin_basic.woff2), format('woff');
 }
 
 body {
