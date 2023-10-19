@@ -244,6 +244,13 @@ li {
     color: var(--secondary-text);
 }
 
+.icon {
+    margin-bottom: -4px;
+    margin-right: 4px;
+    fill: var(--secondary-text);
+    stroke: var(--secondary-text);
+}
+
 .name {
     font-weight: 500;
     color: var(--primary-text);
@@ -267,7 +274,59 @@ li {
     cursor: pointer;
     transition: 300ms;
   
-  }
+}
+
+.social-links {
+    display: flex;
+    margin: 0%;
+    align-items: start;
+    margin-top: -12px;
+    margin-bottom: 8px;
+}
+.social-link-me {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    fill: var(--secondary-text);
+}
+
+.social-mail:hover {
+    transition: fill .2s ease-in-out;
+    fill:#007AFF
+}
+
+.social-mast:hover {
+    transition: fill .2s ease-in-out;
+    
+    fill:#6364FF
+}
+
+.social-insta:hover {
+    transition: fill .2s ease-in-out;
+    fill: url(#insta-gradient) #962FBF;
+}
+
+.social-snap:hover {
+    transition: fill .2s ease-in-out;
+    fill:#e9d110
+}
+
+.social-github-milan-elsen:hover {
+	transition: fill .2s ease-in-out;
+	fill:var(--primary-text);
+}
+
+.overflow1 { transition: all .2s ease-in-out; }
+.overflow2 { transition: all .2s ease-in-out; }
+#stackoverflow-link:hover polygon.overflow1 { fill: #BBBBBB; }
+#stackoverflow-link:hover path.overflow2 { fill: #F58025; }
+
+svg.social {
+	padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+}
 
 footer {
     text-align: center;
