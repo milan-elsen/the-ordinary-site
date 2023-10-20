@@ -67,6 +67,11 @@ body a {
 body a:hover {
     text-decoration: underline;
     color: var(--primary-text);
+
+    .icon {
+        fill: var(--primary-text);
+        stroke: var(--primary-text);    
+    }
 }
 
 header {
@@ -124,9 +129,6 @@ hr {
     opacity: 30%;
     max-width: 600px;
 }
-
-
-
 
 li {
     margin: auto 0;
