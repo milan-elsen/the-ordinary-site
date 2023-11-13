@@ -17,17 +17,26 @@ body .invert-image {
   filter: invert(0);
 }
 
-body .dark-theme {
+.dark-theme {
   --background: #1E1E1E;
   --primary-text: #F4F4F4;
   --secondary-text: #ABABAB;
   --secondary-background: #181818;
 }
-body .dark-theme img {
+.dark-theme img {
   filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
+  .light-theme {
+    --background: #f4f4f4;
+    --primary-text: #202020;
+    --secondary-text: #ABABAB;
+    --secondary-background: #EEEEEE;
+  }
+  .light-theme .invert-image {
+    filter: invert(0);
+  }
   body {
     --background: #1E1E1E;
     --primary-text: #F4F4F4;
@@ -37,15 +46,6 @@ body .dark-theme img {
   body .invert-image {
     filter: invert(1);
   }
-  body .light-theme {
-    --background: #f4f4f4;
-    --primary-text: #202020;
-    --secondary-text: #ABABAB;
-    --secondary-background: #EEEEEE;
-  }
-  body .light-theme .invert-image {
-    filter: invert(0);
-  }
 }
 body {
   font-family: "Fraunces", serif;
@@ -54,6 +54,7 @@ body {
   padding: 0;
   background-color: var(--background);
   color: var(--primary-text);
+  min-width: 340;
 }
 
 body a {
@@ -233,13 +234,13 @@ hr.divider {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 366px) and (max-width: 600px) {
+@media only screen and (min-width: 381px) and (max-width: 600px) {
   .title {
     max-width: 10%;
     text-align: start;
   }
 }
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 380px) {
   .title {
     text-align: start;
     padding-top: 20px;
@@ -302,20 +303,6 @@ hr.divider {
   margin-right: 4px;
   fill: var(--secondary-text);
   stroke: var(--secondary-text);
-}
-
-.button {
-  margin: 0;
-  background-color: var(--background);
-  border: 2px solid var(--secondary-text);
-  border-radius: 10px;
-  padding: 1px 15px;
-  padding-top: 3px;
-  text-align: center;
-  align-items: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 300ms;
 }
 
 .social-links {
@@ -386,33 +373,43 @@ svg.social {
   padding-right: 10px;
 }
 
-footer {
+footer .footer {
   text-align: center;
   background-color: var(--secondary-background);
   color: var(--secondary-text);
   padding: 40px;
   padding-bottom: 40px;
 }
-
-.footer p {
+footer .footer p {
   font-weight: 200;
   font-size: 16px;
 }
-
-.footer a {
+footer .footer a {
   font-size: 16px;
   color: var(--secondary-text);
   text-decoration: underline;
   padding-left: 10px;
   padding-right: 10px;
 }
-
-.footer a:visited {
+footer .footer a:visited {
   color: var(--secondary-text);
   text-decoration: underline;
 }
-
-.footer a:hover {
+footer .footer a:hover {
   color: var(--secondary-text);
   text-decoration: none;
+}
+
+button {
+  margin: 0;
+  background-color: var(--background);
+  border: 1px solid var(--secondary-text);
+  border-radius: 10px;
+  padding: 1px 15px;
+  padding-top: 3px;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 300ms;
 }/*# sourceMappingURL=main.css.map */
